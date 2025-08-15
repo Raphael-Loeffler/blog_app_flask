@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+    <a id="create_new_post" href="/create_new_post">Create New Post</a>
+
+    <section id="blog_list">
+        {% for blog in blog_list %}
+            <div id="blog">
+                <h3> {{ blog.title }} </h3>
+                <p> {{ blog.content }} </p>
+
+                <div id="buttons">
+                    <a href="/edit_template/{{ blog.id }}">Edit</a>
+                    <a href="/delete/{{ blog.id }}">Delete</a>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+{% endblock %}

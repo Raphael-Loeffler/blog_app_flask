@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+    <form action="/edit/{{ blog_id }}">
+        <div id="title">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" placeholder="New Blog">
+        </div>
+        <div id="content">
+            <label for="content">Content</label>
+            <input type="text" name="content" id="content">
+        </div>
+        <button>Update</button>
+    </form>
+    <a href="/">Cancel</a>
+{% endblock %}

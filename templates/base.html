@@ -9,9 +9,13 @@
         <link rel="stylesheet" href="../static/css/base.css">
     </head>
     <body>
-        <h1>Blog Web Application</h1>
-        
-        {% block content %}
-        {% endblock %}
+        <section id="base">
+            <h1 class="main_headline">Blog Web Application</h1>
+            
+            <section id="content_block">
+                {% block content %}
+                {% endblock %}
+            </section>
+        </section>
     </body>
 </html>

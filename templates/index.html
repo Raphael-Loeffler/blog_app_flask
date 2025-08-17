@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
-    <a id="create_new_post" href="/create_new_post">Create New Post</a>
+    <a id="green" class="clickable create_new_post" href="/create_new_post">Create New Post</a>
 
-    <section id="blog_list">
+    <section class="blog_list">
         {% for blog in blog_list %}
-            <div id="blog">
-                <h3> {{ blog.title }} </h3>
-                <p> {{ blog.content }} </p>
+            <div class="blog">
+                <h3 class="blog_title"> {{ blog.title }} </h3>
+                <p class="blog_content"> {{ blog.content }} </p>
 
-                <div id="buttons">
-                    <a href="/edit_template/{{ blog.id }}">Edit</a>
-                    <a href="/delete/{{ blog.id }}">Delete</a>
+                <div class="blog_buttons_div">
+                    <a href="/edit_template/{{ blog.id }}"   class="clickable" id="blue">Edit</a>
+                    <a href="/delete/{{ blog.id }}"  class="clickable" id="red">Delete</a>
                 </div>
             </div>
         {% endfor %}

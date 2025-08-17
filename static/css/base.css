@@ -1,0 +1,141 @@
+body {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section#base {
+    width: 70%;
+}
+
+.main_headline {
+    font-size: 240%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+section#content_block {
+    margin: 10px;
+}
+
+.clickable {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.blog_list {
+    margin-top: 30px;
+}
+
+.blog {
+    border: solid;
+    border-width: 2px;
+    border-color: gray;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 5px;
+    padding-bottom: 15px;
+}
+
+.blog_title {
+    font-size: 130%;
+    margin: 5px;
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+
+.blog_content {
+    margin: 5px;
+    margin-bottom: 12px;
+    margin-top: 0px;
+    margin-left: 6px;
+}
+
+.blog_buttons_div {
+    margin-top: 25px;
+}
+
+.inputs {
+    width: 80%;
+    display: flex;
+}
+
+.spacer {
+    width: 30px;
+}
+
+.single_input {
+    display: flex;
+    flex-direction: column;
+    margin: 3px;
+    width: 100%;
+}
+
+.margin_top {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 105%;
+    margin: 1px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+*#blue {
+    background-color: blue;
+}
+
+*#yellow {
+    background-color: rgb(255, 230, 0);
+    color: black;
+}
+
+*#gray {
+    background-color: rgb(153, 153, 153);
+}
+
+*#green {
+    background-color: green;
+}
+
+*#red {
+    background-color: red;
+}
+
+*#blue:hover {
+    background-color: rgb(0, 0, 220);
+}
+
+*#yellow:hover {
+    background-color: rgb(197, 177, 1);
+    color: black;
+}
+
+*#gray:hover {
+    background-color: rgb(97, 97, 97);
+}
+
+*#green:hover {
+    background-color: rgb(0, 92, 0);
+}
+
+*#red:hover {
+    background-color: rgb(134, 0, 0);
+}
